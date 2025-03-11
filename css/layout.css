@@ -1,9 +1,100 @@
-@media (width>=700) {
+@media (max-width: 600px) {
 	main {
 		max-width: 1000px;
 		margin: 0 auto;
 	}
+
+	h1 {
+		font-size: 48px;
+	}
+
+	h2 {
+		size: 36px;
+	}
+
+	/* gør teksten i menuen større og hvid */
+	.ham-menu-tekst {
+		background-color: white;
+		font-family: robotomono;
+		font-size: 36px;
+	}
+
+	/* off-screen-menu er den skjulte menu, 
+	som ligger uden for skærmen til højre(right: -450px)
+	Når .active-klassen tilføjes via JavaScript, 
+	glider den ind på skærmen (right: 0).*/
+	.off-screen-menu {
+		background-color: #0b0004;
+		opacity: 98%;
+		height: 100vh;
+		width: 100%;
+		max-width: 450px;
+		position: fixed;
+		top: 0;
+		right: -450px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		padding-top: 100px;
+		align-items: center;
+		text-align: center;
+		font: 3rem;
+		transform: 0.3s ease;
+	}
+
+	.off-screen-menu.active {
+		right: 0;
+	}
+	/* .ham-menu (hamburger-knappen)
+    Laver en knap med tre streger (<span>-elementer).
+    De er placeret som en klassisk "hamburgermenu" 
+	med top, midt og bund. */
+	.ham-menu {
+		height: 50px;
+		width: 40px;
+		margin-left: auto;
+		position: relative;
+	}
+
+	.ham-menu span {
+		height: 5px;
+		width: 100%;
+		background-color: #0b0004;
+		border-radius: 25px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		transition: 0.3s ease;
+	}
+
+	.ham-menu span:nth-child(1) {
+		top: 25%;
+	}
+
+	.ham-menu span:nth-child(3) {
+		top: 75%;
+	}
+	/* .ham-menu.active (Når menuen er åben)
+    Øverste og nederste streg roteres, så de danner et "X".
+    Midterste streg bliver usynlig (opacity: 0). */
+	.ham-menu.active span {
+		background-color: white;
+	}
+	.ham-menu.active span:nth-child(1) {
+		top: 50%;
+		transform: translate(-50%, -50%) rotate(45deg);
+	}
+
+	.ham-menu.active span:nth-child(2) {
+		opacity: 0;
+	}
+
+	.ham-menu.active span:nth-child(3) {
+		top: 50%;
+		transform: translate(-50%, -50%) rotate(-45deg);
+	}
 }
 
-/* @media (width>=1200) {
-} */
+@media (min-width: 600px) {
+}

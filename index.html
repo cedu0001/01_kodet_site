@@ -7,6 +7,13 @@
 		<meta name="robots" content="noindex" />
 		<link rel="stylesheet" href="./css/general.css" />
 		<link rel="stylesheet" href="./css/layout.css" />
+		<!-- Her hentes JavaScript-filen, 
+			 der styrer, hvornår menuen åbner og lukker. 
+			 defer sikrer, at JavaScript først kører, 
+			 når hele HTML’en er indlæst. Fordelen er at 
+			 JavaScript-filen kan hentes i baggrunden, mens HTML’en 
+			 indlæses, hvilket kan gøre siden hurtigere -->
+		<script src="./javatest.js" defer></script>
 		<link rel="icon" type="image/png" href="/tomo-fav/favicon-96x96.png" sizes="96x96" />
 		<link rel="icon" type="image/svg+xml" href="/tomo-fav/favicon.svg" />
 		<link rel="shortcut icon" href="/tomo-fav/favicon.ico" />
@@ -16,14 +23,22 @@
 	</head>
 	<body>
 		<header>
+			<!-- burgermenu noter: selve menuen, som
+			 i starten er skjult uden for skærmen (til højre) 
+			den her class indeholder en ul med tre links
+			til forskellige sider
+			-->
 			<div class="off-screen-menu">
 				<ul>
-					<li><a href="nyheder.html">nyheder</a></li>
-					<li><a href="opskrifter.html">opskrifter</a></li>
-					<li><a href="galleri.html">galleri</a></li>
+					<li><a class="ham-menu-tekst" href="nyheder.html">nyheder</a></li>
+					<li><a class="ham-menu-tekst" href="opskrifter.html">opskrifter</a></li>
+					<li><a class="ham-menu-tekst" href="galleri.html">galleri</a></li>
 				</ul>
 			</div>
 			<nav>
+				<!-- I nav har man et logo samt hamburgermenu- knappen
+				 span laver de tre linjer, hvor man så senere i css kan
+				 style dem -->
 				<img class="logo" src="/img/logo2.svg" />
 				<div class="ham-menu">
 					<span></span>
@@ -31,15 +46,26 @@
 					<span></span>
 				</div>
 			</nav>
-			<script src="./javatest.js"></script>
-
-			<div class="headerstyle">
-				<h1>EN HURTIG GUIDE</h1>
-				<h2>instant nudler</h2>
-			</div>
 		</header>
 
 		<main>
+			<section class="grid_3-1-1-1">
+				<div class="headerstyle">
+					<h1>EN HURTIG GUIDE</h1>
+					<h2>instant nudler</h2>
+				</div>
+				<p class="tomotekst">velkommen!!</p>
+				<div class="tomo">
+					<img src="img/tomo2.svg" alt="tomo" />
+				</div>
+			</section>
+			<div class="slideshow">
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus accusantium nobis, voluptatum vel soluta
+					odit.
+				</p>
+			</div>
+
 			<section>
 				<h2>ahhhhh</h2>
 				<p>
