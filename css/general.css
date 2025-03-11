@@ -4,12 +4,6 @@
 	box-sizing: border-box;
 }
 
-img {
-	max-width: 100%;
-	height: auto;
-	display: block;
-}
-
 @font-face {
 	font-family: inter;
 	src: url(/font/Inter_28pt-ExtraBold.ttf);
@@ -23,4 +17,32 @@ img {
 @font-face {
 	font-family: robotomono;
 	src: url(/font/RobotoMono-Regular.ttf);
+}
+
+body {
+	background-color: #ffd000;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+h1 {
+	font-family: inter;
+}
+
+h2 {
+	font-family: sourceserif;
+}
+
+h3,
+p {
+	font-family: robotomono;
+}
+
+.logo {
+	max-width: 300px;
+	max-height: 300px;
 }
