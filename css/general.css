@@ -1,4 +1,4 @@
-/* * {
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -8,4 +8,19 @@ img {
 	max-width: 100%;
 	height: auto;
 	display: block;
-} */
+}
+
+@font-face {
+	font-family: inter;
+	src: url(/font/Inter_28pt-ExtraBold.ttf);
+}
+
+@font-face {
+	font-family: sourceserif;
+	src: url(/font/SourceSerif4-Italic.ttf);
+}
+
+@font-face {
+	font-family: robotomono;
+	src: url(/font/RobotoMono-Regular.ttf);
+}
