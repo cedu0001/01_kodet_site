@@ -2,6 +2,20 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	max-width: 1000px;
+}
+
+html,
+body {
+	height: 100%;
+}
+html {
+	display: table;
+	margin: auto;
+}
+body {
+	display: table-cell;
+	vertical-align: middle;
 }
 
 @font-face {
