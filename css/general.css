@@ -54,51 +54,41 @@ nav {
 	color: white;
 	text-decoration: none;
 }
-.btn1:hover {
-	background-color: rgb(255, 255, 255);
-	font-family: robotomono;
-	color: rgb(0, 0, 0);
-	border-style: solid;
-	text-decoration: none;
-}
 
 .logo {
 	max-width: 75px;
 	max-height: 75px;
-	/* display: flex;
-	flex-direction: row;
-	justify-content: right; */
-	/* gør det noget?? */
 }
-/* .grid_1-1 {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 1em;
-} */
-
-/* .tomo {
-	display: grid;
-	grid-column: 3;
-	max-width: 75px;
-	max-height: 75px;
-} */
 
 .grid_3-1-1-1 {
 	display: grid;
 	grid-template-columns: 3fr 1fr 1fr 1fr;
-	gap: 1em;
+	grid-template-rows: 33.33% 33.33% 33.33%;
+}
+
+.tomotekst {
+	grid-template-columns: 5;
+	grid-row: 2/4;
+}
+
+.tekstpil {
+	grid-column: 6;
+	grid-row: 2/3;
+	max-width: 40px;
+	max-height: 40px;
 }
 
 .tomo {
 	grid-column: 7;
-}
-
-.tomotekst {
+	grid-row: 2/4;
+	max-width: 75px;
+	max-height: 75px;
 }
 
 .headerstyle {
-	display: grid;
 	grid-column: 1;
+	grid-column: 1/2;
+	grid-row: 1/4;
 }
 
 .slideshow {
