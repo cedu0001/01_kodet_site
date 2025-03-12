@@ -14,9 +14,13 @@
 
 	/* gør teksten i menuen større og hvid */
 	.ham-menu-tekst {
-		background-color: white;
+		text-decoration: none;
+		color: white;
 		font-family: robotomono;
 		font-size: 36px;
+	}
+	.ham-menu-tekst:hover {
+		text-decoration-line: underline;
 	}
 
 	/* off-screen-menu er den skjulte menu, 

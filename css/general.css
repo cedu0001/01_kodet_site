@@ -48,6 +48,20 @@ nav {
 	background-color: #ffd000;
 }
 
+.btn1 {
+	background-color: black;
+	font-family: robotomono;
+	color: white;
+	text-decoration: none;
+}
+.btn1:hover {
+	background-color: rgb(255, 255, 255);
+	font-family: robotomono;
+	color: rgb(0, 0, 0);
+	border-style: solid;
+	text-decoration: none;
+}
+
 .logo {
 	max-width: 75px;
 	max-height: 75px;
