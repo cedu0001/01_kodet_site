@@ -108,3 +108,29 @@ nav {
 .slideshow {
 	background-color: bisque;
 }
+
+.dropdown {
+	background-color: black;
+
+	height: auto;
+}
+
+.grid_1-1-1 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 33.33% 33.33% 33.33%;
+	gap: 0.5em;
+	padding-bottom: 15px;
+}
+
+.nudelguidepage {
+	background-color: black;
+	max-width: 100%;
+	height: auto;
+}
+
+.footerstyle {
+	background-color: black;
+	max-width: 100%;
+	height: auto;
+}
