@@ -11,7 +11,14 @@
 	}
 
 	h2 {
-		size: 36px;
+		font-size: 36px;
+	}
+
+	h3 {
+		font-size: 24px;
+	}
+	p {
+		font-size: 16px;
 	}
 
 	/* gør teksten i menuen større og hvid */
@@ -112,6 +119,11 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 33.33% 33.33% 33.33%;
+	}
+	.grid_1-1-1-1 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1em;
 	}
 }
 

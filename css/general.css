@@ -234,9 +234,9 @@ nav {
 	color: white;
 }
 
-.grid_1-1-2 {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+.flex-start {
+	display: flex;
+	justify-content: start;
 }
 
 #tomo-nyheder {
@@ -255,6 +255,32 @@ nav {
 #nyhdertekst {
 	grid-column: 2/4;
 }
+/* opskrifter-start */
+.featuredopskrift {
+	display: grid;
+}
+/* opskrifter-slut */
+
+/* galleri-start */
+
+.grid_1-1 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0.5em;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+.grid_1-1-1-1 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 0.5em;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+/* galleri-slut */
+
 .footerstyle {
 	background-color: black;
 	max-width: 100%;
