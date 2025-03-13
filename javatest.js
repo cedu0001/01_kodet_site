@@ -8,6 +8,14 @@ og menuen (offScreenMenu), så vi kan manipulere dem. */
 const hamMenu = document.querySelector('.ham-menu');
 const offScreenMenu = document.querySelector('.off-screen-menu');
 
+
+/* Først går jeg ind of "finder" HTML elementerne med document.getElementById og gemmer dem som konstanter*/
+const imageToToggle = document.getElementById('featuredopskrift-img')
+const infoToToggle = document.getElementById('featuredopskrift-info')
+
+/* Lav en variabel for at holde styr på om HTML elementerne bliver vist eller ej*/
+var isDisplayed = true;
+
 /* Lytter efter et klik på hamburger-knappen.
 Når den klikkes, tilføjer eller fjerner den .active-klassen på både menuen og hamburger-knappen.
 Det betyder:
@@ -18,6 +26,26 @@ Det betyder:
   hamMenu.addEventListener('click', () => { 
   hamMenu.classList.toggle('active');
   offScreenMenu.classList.toggle('active');
+
+
+  /* Tjek variablerne "IsDisplayed" for om HTML elementerne bliver vist (isDisplayed == true) */
+  if (isDisplayed) {
+
+    /* Hvis de bliver vist, gem dem */
+    imageToToggle.style.display = "none"
+    infoToToggle.style.display = "none"
+
+    /* Sæt variablen til 'false' */
+    isDisplayed = false
+  
+  /*Hvis variable er false, hvis HTML elementerne*/ 
+  } else if (isDisplayed == false)  {
+    imageToToggle.style.display = "initial"
+    infoToToggle.style.display = "initial"
+
+    /* Sæt variablen til 'true */
+    isDisplayed = true
+  }
 })
 
 /* Hvordan spiller det hele sammen? mellem html, css og js

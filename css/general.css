@@ -275,6 +275,30 @@ nav {
 	display: grid;
 }
 
+#featuredopskrift-info,
+#featuredopskrift-img {
+	grid-column: 1/2;
+	grid-row: 1/2;
+}
+
+#featuredopskrift-img {
+	max-width: 100%;
+	opacity: 77%;
+	border-style: solid;
+	place-self: stretch;
+	object-fit: cover;
+}
+#featuredopskrift-info {
+	place-self: center;
+	background-color: rgba(255, 255, 255, 0.486);
+	max-width: 100%;
+	min-width: 300px;
+	min-height: 150px;
+	padding: 1em;
+	font-size: 3vw;
+	z-index: 1;
+}
+
 .grid_1-1-opskrifter {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -294,6 +318,7 @@ nav {
 }
 
 .opskriftbillede {
+	grid-column: 1/2;
 	grid-row: 1/2;
 }
 
@@ -302,22 +327,32 @@ nav {
 	justify-content: space-around;
 }
 
+.grid_1-1-ikon {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0.5em;
+}
+
 .gul-p {
+	grid-column: 1;
 	color: #ffd000;
 	text-align: center;
 }
 .icons {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
 	background-color: rgb(0, 0, 0);
 	border-radius: 50px;
-	min-width: 150px;
-	max-width: 200px;
-	max-height: 150px;
-	padding: 5px;
-	margin: 5px;
+	padding: 10px;
+	margin: 10px;
 }
 
 .icons-svg {
+	grid-column: 2;
 	margin: auto;
+	width: auto;
+	height: auto;
 }
 
 /* opskrifter-slut */
