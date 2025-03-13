@@ -59,14 +59,30 @@ Når man klikker på hamburger-knappen, sker to ting:
 })
 
 /* --------- SLIDESHOW LOGIK --------- */
-let currentSlide = 0; // Holder styr på hvilket slide der vises
+let currentSlideIndex = 0; // Holder styr på hvilket slide der vises
 const slides = document.querySelectorAll(".slide"); // Henter alle slides
+const dots = document.querySelectorAll(".dot");
 
 /* Funktion til at skifte slide */
 function changeSlide(direction) {
-    slides[currentSlide].classList.remove("active"); // Skjuler nuværende slide
-    currentSlide = (currentSlide + direction + slides.length) % slides.length; // Opdaterer index til nyt slide
-    slides[currentSlide].classList.add("active"); // Viser det nye slide
+    slides[currentSlideIndex].classList.remove("active"); // Skjuler nuværende slide
+    dots[currentSlideIndex].classList.remove("active");
+
+    currentSlideIndex = (currentSlideIndex + direction + slides.length) % slides.length; // Opdaterer index til nyt slide
+   
+    slides[currentSlideIndex].classList.add("active"); // Viser det nye slide
+    dots[currentSlideIndex].classList.add("active");
+  }
+
+ /* Funktion til at gå til specifikt slide */
+ function currentSlide(n) {
+  slides[currentSlideIndex].classList.remove("active");
+  dots[currentSlideIndex].classList.remove("active");
+
+  currentSlideIndex = n;
+
+  slides[currentSlideIndex].classList.add("active");
+  dots[currentSlideIndex].classList.add("active");
 }
 
 /* --------- SWIPE FUNKTIONALITET (MOBIL) --------- */

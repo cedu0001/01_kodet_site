@@ -63,21 +63,57 @@
 				</div>
 			</section>
 
-			<section class="slideshowbox">
-				<div class="grid_1-2-3-2-1">
-					<h3 id="forsideh3">månedens nudler</h3>
-					<p class="pil-l">pil</p>
-					<img src="img/cupnoodlemiso1.png" alt="" class="sliderbillede" />
-					<section class="slidernudelinfo">
-						<h3>OYAKATA MISO RAMEN</h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur natus voluptas explicabo
-							autem eius minus culpa, quae eos unde rerum?
-						</p>
-					</section>
-					<p class="pil-r">pil</p>
+			<!-- --------- SLIDESHOW CONTAINER --------- -->
+			<div class="slideshow-container">
+				<!-- Venstre pil (forrige slide) -->
+				<button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+
+				<!-- Første slide -->
+				<div class="slide active">
+					<div class="slide-content">
+						<img src="img/cupnoodlemiso1.png" alt="Oyakata Miso Ramen" />
+						<div>
+							<h3>OYAKATA MISO RAMEN</h3>
+							<p>Nyd den autentiske smag af Japan med OYAKATA MISO RAMEN!</p>
+							<a href="#" class="cta">læs mere her!</a>
+						</div>
+					</div>
 				</div>
-			</section>
+
+				<!-- Andet slide -->
+				<div class="slide">
+					<div class="slide-content">
+						<img src="img/cupnoodlemiso1.png" alt="Spicy Ramen" />
+						<div>
+							<h3>SPICY RAMEN</h3>
+							<p>Oplev en stærk og lækker nuddeloplevelse!</p>
+							<a href="#" class="cta">læs mere her!</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Tredje slide -->
+				<div class="slide">
+					<div class="slide-content">
+						<img src="img/cupnoodlemiso1.png" alt="Tonkotsu Ramen" />
+						<div>
+							<h3>TONKOTSU RAMEN</h3>
+							<p>Klassisk japansk Tonkotsu ramen med fyldig smag.</p>
+							<a href="#" class="cta">læs mere her!</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Højre pil (næste slide) -->
+				<button class="next" onclick="changeSlide(1)">&#10095;</button>
+
+				<!-- Indikatorprikker -->
+				<div class="slideshow-indicators">
+					<span class="dot active" onclick="currentSlide(0)"></span>
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+				</div>
+			</div>
 
 			<div class="grid_1-1-3-1">
 				<img src="img/tomo2.svg" alt="" class="tomo-l" />

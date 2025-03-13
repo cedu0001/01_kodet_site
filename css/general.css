@@ -105,53 +105,110 @@ nav {
 	grid-column: 1/2;
 	grid-row: 1/4;
 }
-/* start side introduktion */
+/* start side introduktion slut*/
 
-/* slideshow start */
-.slideshowbox {
-	background-color: rgb(0, 0, 0);
-	max-width: 100%;
-	height: auto;
-	display: block;
-	padding-top: 15px;
-	padding-bottom: 30px;
-}
-
-.grid_1-2-3-2-1 {
+/* --------- SLIDESHOW CONTAINER --------- */
+.slideshow-container {
+	position: relative; /* Gør det muligt at placere pile absolut i forhold til containeren */
+	max-width: 600px; /* Slideshowets maksimale bredde */
+	margin: auto; /* Centrerer slideshowet på siden */
+	overflow: hidden; /* Forhindrer indhold i at strække sig uden for containeren */
 	display: grid;
-	grid-template-columns: 1fr 2fr 3fr 2fr 1fr;
-	grid-template-rows: 20% 20% 20% 20% 20%;
+	grid-template-columns: auto 1fr auto; /* Tre kolonner: Pile - Slide - Pile. 
+	"auto" betyder, at kolonnens bredde automatisk justerer sig til indholdet (pileknapperne). */
+	align-items: center; /* Justerer elementerne i midten lodret */
+	background-color: rgb(0, 0, 0);
 }
 
-.pil-l {
+/* --------- SLIDES --------- */
+.slide {
+	display: none; /* Skjuler alle slides som standard */
+	grid-column: 2; /* Placerer slides i midterste kolonne */
+}
+
+/* Viser kun det aktive slide */
+.active {
+	display: flex; /* Gør det muligt at justere billedet og teksten */
+	justify-content: center; /* Centrerer indholdet */
+	align-items: center; /* Centrerer indholdet lodret */
+}
+
+/* --------- LAYOUT FOR TEKST & BILLEDE --------- */
+.slide-content {
+	display: flex;
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 1fr; /* To lige store kolonner: Billede og tekst */
+	align-items: center; /* Justerer elementerne lodret */
+	gap: 20px; /* Afstand mellem billede og tekst */
+}
+.slide-content h3,
+.slide-content p {
 	color: white;
+}
+
+/* Billede styling */
+.slide img {
+	width: 100%; /* Sørger for, at billedet ikke overstiger sin container */
+	max-width: 200px; /* Begrænser billedets maksimale bredde */
+}
+
+/* --------- CTA KNAP --------- */
+.cta {
+	display: inline-block; /* Gør knappen klikbar */
+	margin-top: 10px; /* Lidt afstand over knappen */
+	padding: 10px 20px; /* Gør knappen større */
+	background-color: #ffd000; /* Giver knappen en gul farve */
+	color: black; /* Gør teksten sort for kontrast */
+	font-weight: bold; /* Gør teksten fed */
+	text-decoration: none; /* Fjerner understregning fra link */
+	border-radius: 5px; /* Gør hjørnerne runde */
+	font-family: robotomono;
+}
+
+/* --------- NAVIGATIONSPILE --------- */
+.prev,
+.next {
+	background-color: #ffd000; /* Pilenes farve */
+	color: black; /* Tekstfarve */
+	font-size: 20px; /* Størrelse på pile */
+	padding: 10px; /* Gør knapperne større */
+	border: none; /* Fjerner kant */
+	cursor: pointer; /* Gør det tydeligt, at det er en knap */
+	grid-column: auto; /* Placerer dem i deres egne kolonner */
+}
+
+/* Placerer venstre pil i første kolonne */
+.prev {
 	grid-column: 1;
-	grid-row: 3;
 }
 
-.sliderbillede {
-	max-width: 100%;
-	height: auto;
-	grid-column: 2;
+/* Placerer højre pil i tredje kolonne */
+.next {
+	grid-column: 3;
 }
 
-#forsideh3 {
-	color: white;
-	padding-bottom: 20px;
-	grid-column: 3/5;
-	grid-row: 1;
+/* --------- INDIKATORPRIKKER --------- */
+.slideshow-indicators {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
 }
 
-.slidernudelinfo {
-	color: white;
-	grid-column: 4/6;
-	grid-row: 3/4;
+.dot {
+	width: 150px;
+	bottom: 57px;
+	height: 12px;
+	width: 12px;
+	margin: 0 5px;
+	background-color: gray;
+	border-radius: 50%;
+	display: inline-block;
+	cursor: pointer;
 }
 
-.pil-r {
-	color: white;
-	grid-column: 9;
-	grid-row: 3;
+.dot.active {
+	background-color: white;
 }
 
 /* slideshow slut */

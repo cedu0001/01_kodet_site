@@ -109,11 +109,20 @@
 		transform: translate(-50%, -50%) rotate(-45deg);
 	}
 
-	.sliderbillede {
-		height: auto;
-		width: 1000px;
-		grid-column: 2;
-		grid-row: 3;
+	.slide-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr; /* Bevarer layoutet med billede + tekst ved siden af hinanden */
+		gap: 10px; /* Mindre afstand mellem elementer */
+	}
+	.prev,
+	.next {
+		display: none; /* Skjuler navigationspile på mobil, da vi bruger swipe i stedet */
+	}
+
+	/* Prikker under billedet på mobil */
+	.slideshow-indicators {
+		margin-top: 245px; /* Lidt tættere på billedet */
+		margin-left: -789px; /* Lidt tættere på billedet */
 	}
 
 	.grid_1-1-1 {
