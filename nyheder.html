@@ -7,25 +7,96 @@
 		<meta name="robots" content="noindex" />
 		<link rel="stylesheet" href="./css/general.css" />
 		<link rel="stylesheet" href="./css/layout.css" />
+		<script src="./javatest.js" defer></script>
+		<link rel="icon" type="image/png" href="favicontomo/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="favicontomo/favicon.svg" />
+		<link rel="shortcut icon" href="favicontomo/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="favicontomo/apple-touch-icon.png" />
+		<link rel="manifest" href="favicontomo/site.webmanifest" />
 		<title>Nyheder</title>
 	</head>
 	<body>
 		<header>
-			<nav>
-				<img src="/img/logo.svg" alt="logo" />
+			<div class="off-screen-menu">
 				<ul>
-					<li><a href="index.html">forside</a></li>
-					<li><a href="nyheder.html">nyheder</a></li>
-					<li><a href="opskrifter.html">opskrifter</a></li>
-					<li><a href="galleri.html">galleri</a></li>
+					<li><a class="ham-menu-tekst" href="nyheder.html">nyheder</a></li>
+					<li><a class="ham-menu-tekst" href="opskrifter.html">opskrifter</a></li>
+					<li><a class="ham-menu-tekst" href="galleri.html">galleri</a></li>
+					<li><a class="ham-menu-tekst" href="galleri.html">guide</a></li>
 				</ul>
+			</div>
+			<nav>
+				<img class="logo" src="/img/logo2.svg" />
+				<div class="ham-menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
 			</nav>
 		</header>
+
 		<main>
-			<section></section>
+			<section class="grid_3-1-1-1">
+				<div class="headerstyle">
+					<h1>INSTANT NUDLER</h1>
+					<h2>nyheder</h2>
+				</div>
+				<p class="tomotekst">velkommen!!</p>
+				<img src="img/tekstpil.svg" alt="pil" class="tekstpil" />
+				<div class="tomo-r">
+					<img src="img/tomo2.svg" alt="tomo" />
+				</div>
+			</section>
+
+			<section class="nyhederstyle">
+				<div class="grid_2-2">
+					<div class="nyhederbillede"><img src="img/cupnoodlemiso1.png" alt="" /></div>
+					<div class="nyhederinfo">
+						<h3>ahh</h3>
+						<p>ahhhh</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, earum.</p>
+					</div>
+				</div>
+			</section>
+
+			<div class="grid_1-1-2">
+				<img src="img/tomo2.svg" alt="" id="tomo-nyheder" />
+				<img src="img/tekstpil.svg" alt="pil" id="tekstpil-nyheder" />
+				<p id="nyhedtekst">mums</p>
+			</div>
+
+			<section class="nyhederstyle">
+				<div class="grid_2-2">
+					<div class="nyhederbillede"><img src="img/cupnoodlemiso1.png" alt="" /></div>
+					<div class="nyhederinfo">
+						<h3>ahh</h3>
+						<p>ahhhh</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, earum.</p>
+					</div>
+				</div>
+			</section>
+			<section class="nyhederstyle">
+				<div class="grid_2-2">
+					<div class="nyhederbillede"><img src="img/cupnoodlemiso1.png" alt="" /></div>
+					<div class="nyhederinfo">
+						<h3>ahh</h3>
+						<p>ahhhh</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, earum.</p>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer>
-			<nav></nav>
+			<div class="footerstyle">
+				<img src="img/tomo2.svg" alt="" class="tomo-l" />
+
+				<div>
+					<ul class="footerstylekontakt">
+						<li class="footerstyleli"><a href="opskrifter.html">kontakt</a></li>
+						<li class="footerstyleli"><a href="opskrifter.html">instagram</a></li>
+					</ul>
+				</div>
+			</div>
 		</footer>
 	</body>
 </html>
