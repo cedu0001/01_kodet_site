@@ -125,6 +125,13 @@
 		grid-template-columns: 1fr 1fr;
 		gap: 1em;
 	}
+	.grid_1-1-opskrifter {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 2em;
+		padding-top: 40px;
+		padding-bottom: 20px;
+	}
 }
 
 @media (min-width: 600px) {

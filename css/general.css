@@ -2,7 +2,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	max-width: 1000px;
 }
 
 html,
@@ -74,6 +73,7 @@ nav {
 	max-height: 75px;
 }
 
+/* start side introduktion */
 .grid_3-1-1-1 {
 	display: grid;
 	grid-template-columns: 3fr 1fr 1fr 1fr;
@@ -105,7 +105,9 @@ nav {
 	grid-column: 1/2;
 	grid-row: 1/4;
 }
+/* start side introduktion */
 
+/* slideshow start */
 .slideshowbox {
 	background-color: rgb(0, 0, 0);
 	max-width: 100%;
@@ -152,6 +154,9 @@ nav {
 	grid-row: 3;
 }
 
+/* slideshow slut */
+
+/* søgesektion start */
 .grid_1-1-3-1 {
 	padding-top: 15px;
 	display: grid;
@@ -193,10 +198,15 @@ nav {
 	justify-content: right;
 }
 
+/* søgesektion slut */
+
+/* dropdown start */
 .dropdown {
 	background-color: black;
 }
+/* dropdown slut */
 
+/* nudelguide start */
 .grid_1-1-1 {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -212,6 +222,9 @@ nav {
 	height: auto;
 }
 
+/* nudelguide slut */
+
+/* nyheder-html start */
 .nyhederstyle {
 	display: block;
 	background-color: rgb(0, 0, 0);
@@ -255,10 +268,58 @@ nav {
 #nyhdertekst {
 	grid-column: 2/4;
 }
+/* nyheder-html slut */
+
 /* opskrifter-start */
 .featuredopskrift {
 	display: grid;
 }
+
+.grid_1-1-opskrifter {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0.5em;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+.grid_1-1-opskriftkort {
+	display: block;
+	background-color: rgb(255, 255, 255);
+	border-style: solid;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 2fr 2fr;
+	margin-bottom: 20px;
+}
+
+.opskriftbillede {
+	grid-row: 1/2;
+}
+
+.flex-spacearound {
+	display: flex;
+	justify-content: space-around;
+}
+
+.gul-p {
+	color: #ffd000;
+	text-align: center;
+}
+.icons {
+	background-color: rgb(0, 0, 0);
+	border-radius: 50px;
+	min-width: 150px;
+	max-width: 200px;
+	max-height: 150px;
+	padding: 5px;
+	margin: 5px;
+}
+
+.icons-svg {
+	margin: auto;
+}
+
 /* opskrifter-slut */
 
 /* galleri-start */
