@@ -82,25 +82,25 @@ nav {
 .grid_3-1-1-1 {
 	display: grid;
 	grid-template-columns: 3fr 1fr 1fr 1fr;
-	grid-template-rows: 33.33% 33.33% 33.33%;
+	grid-template-rows: 25% 25% 25% 25%;
 	margin-bottom: 15px;
 }
 
 .tomotekst {
 	grid-template-columns: 5;
-	grid-row: 2/4;
+	grid-row: 2/3;
 }
 
 .tekstpil {
 	grid-column: 6;
-	grid-row: 2/3;
+	grid-row: 3/4;
 	max-width: 40px;
 	max-height: 40px;
 }
 
 .tomo-r {
 	grid-column: 7;
-	grid-row: 2/4;
+	grid-row: 3/4;
 	max-width: 75px;
 	max-height: 75px;
 }
@@ -347,6 +347,28 @@ nav {
 /* nudelguide slut */
 
 /* nyheder-html start */
+
+.grid_3-1-1-1 #tomo-nyheder {
+	grid-column: 7;
+	grid-row: 4/5;
+	max-width: 75px;
+	max-height: 75px;
+}
+
+.grid_3-1-1-1 #tomotekst-nyheder {
+	grid-column: 5;
+	grid-row: 2/3;
+	max-width: 75px;
+	max-height: 75px;
+}
+
+.tekstpil-nyheder {
+	grid-column: 6;
+	grid-row: 4;
+	max-width: 40px;
+	max-height: 40px;
+}
+
 .nyhederstyle {
 	display: block;
 	background-color: black;
@@ -393,6 +415,19 @@ nav {
 /* nyheder-html slut */
 
 /* opskrifter-start */
+
+.grid_3-1-1-1 #tomo-opskrifter {
+	grid-column: 7;
+	grid-row: 4/5;
+	max-width: 75px;
+	max-height: 75px;
+}
+
+#tomotekst-opskrifter {
+	grid-column: 5;
+	grid-row: 3/4;
+	font-size: 16px;
+}
 
 .featuredopskrift {
 	display: flex;
@@ -509,6 +544,19 @@ nav {
 /* opskrifter-slut */
 
 /* galleri-start */
+.grid_3-1-1-1 #tomo-galleri {
+	grid-column: 7;
+	grid-row: 4/5;
+	max-width: 75px;
+	max-height: 75px;
+}
+
+.grid_3-1-1-1 #tomotekst-galleri {
+	grid-column: 5;
+	grid-row: 3/4;
+	max-width: 75px;
+	max-height: 75px;
+}
 
 .grid_1-1 {
 	display: grid;
@@ -529,14 +577,24 @@ nav {
 /* galleri-slut */
 
 .footerstyle {
+	padding-top: 10px;
+	padding-bottom: 10px;
 	background-color: black;
 	max-width: 100%;
 	height: auto;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+	align-items: center;
 }
 
-.footerstylekontakt {
-	justify-content: space-between;
+.footerstyleli {
 	list-style-type: none;
+	padding: 0;
+}
+
+.footerstyleli a {
+	color: #ffcc00; /* Skift til den ønskede farve */
+	text-decoration: none; /* Fjern understregning, hvis du vil */
+	font-family: robotomono;
+	font-size: 16px;
 }

@@ -54,6 +54,7 @@
 		text-align: center;
 		font: 3rem;
 		transform: 0.3s ease;
+		z-index: 998;
 	}
 
 	.off-screen-menu.active {
@@ -65,15 +66,24 @@
 	med top, midt og bund. */
 	.ham-menu {
 		height: 50px;
-		width: 40px;
+		width: 50px;
+		background-color: #0b0004;
 		margin-left: auto;
 		position: relative;
+		z-index: 999;
+	}
+
+	.insta-icon img {
+		padding-left: 15px;
+	}
+
+	.ham-menu {
 	}
 
 	.ham-menu span {
-		height: 5px;
-		width: 100%;
-		background-color: #0b0004;
+		height: 4px;
+		width: 80%;
+		background-color: #ffffff;
 		border-radius: 25px;
 		position: absolute;
 		left: 50%;
@@ -158,7 +168,32 @@
 		padding-top: 40px;
 		padding-bottom: 20px;
 	}
+	.footerstyle {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background-color: black;
+		max-width: 100%;
+		height: auto;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.footerstyleli {
+		list-style-type: none;
+		padding: 0;
+	}
+
+	.footerstyleli a {
+		color: #ffcc00; /* Skift til den ønskede farve */
+		text-decoration: none; /* Fjern understregning, hvis du vil */
+		font-family: robotomono;
+		font-size: 16px;
+	}
 }
 
 @media (min-width: 600px) {
+	.insta-icon {
+		display: none;
+	}
 }
