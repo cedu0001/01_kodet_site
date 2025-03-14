@@ -112,6 +112,13 @@ nav {
 	background-color: rgb(0, 0, 0);
 }
 
+#m-nudler {
+	color: white;
+	grid-column: 2/3;
+	text-align: center;
+	font-size: 24px;
+}
+
 /* --------- SLIDES --------- */
 .slide {
 	display: none; /* Skjuler alle slides som standard */
@@ -349,7 +356,7 @@ nav {
 	max-height: 75px;
 }
 
-.grid_3-1-1-1 #tomotekst-nyheder {
+#tomotekst-nyheder {
 	grid-column: 5;
 	grid-row: 2/3;
 	max-width: 75px;

@@ -33,15 +33,22 @@
 					<li><a class="ham-menu-tekst" href="nyheder.html">nyheder</a></li>
 					<li><a class="ham-menu-tekst" href="opskrifter.html">opskrifter</a></li>
 					<li><a class="ham-menu-tekst" href="galleri.html">galleri</a></li>
-					<li><a class="ham-menu-tekst" href="galleri.html">guide</a></li>
+					<li><a class="ham-menu-tekst" href="index.html">guide</a></li>
 				</ul>
 			</div>
 
 			<nav>
+				<a href="index.html"><img class="logo" src="/img/logo2.svg" /></a>
+				<ul class="flex_row">
+					<li class="nav-web-global"><a href="nyheder.html">nyheder</a></li>
+					<li class="nav-web-global"><a href="opskrifter.html">opskrifter</a></li>
+					<li class="nav-web-global"><a href="galleri.html">galleri</a></li>
+					<li class="nav-web-global"><a href="index.html#guide">guide</a></li>
+					<li class="cta-web-global"><a href="galleri.html">del med os!</a></li>
+				</ul>
 				<!-- I nav har man et logo samt hamburgermenu- knappen
 				 span laver de tre linjer, hvor man så senere i css kan
 				 style dem -->
-				<a href="index.html"><img class="logo" src="/img/logo2.svg" /></a>
 				<div class="ham-menu">
 					<span></span>
 					<span></span>
@@ -51,18 +58,6 @@
 					<img src="img/iconinsta.svg" alt="" />
 				</div>
 			</nav>
-
-			<nav class="header_web">
-				<div>
-					<ul class="flex_row">
-						<li class="nav-web-global"><a href="nyheder.html">nyheder</a></li>
-						<li class="nav-web-global"><a href="opskrifter.html">opskrifter</a></li>
-						<li class="nav-web-global"><a href="galleri.html">galleri</a></li>
-						<li class="nav-web-global"><a href="galleri.html">guide</a></li>
-						<li class="cta-web-global"><a href="galleri.html">del med os!</a></li>
-					</ul>
-				</div>
-			</nav>
 		</header>
 
 		<main>
@@ -70,7 +65,7 @@
 				<div class="headerstyle">
 					<h1>EN HURTIG GUIDE</h1>
 					<h2>instant nudler</h2>
-					<a class="btn1" href="galleri.html">hop til guiden!</a>
+					<a class="btn1" href="index.html#guide">hop til guiden!</a>
 				</div>
 				<p class="tomotekst">velkommen!!</p>
 				<img src="img/tekstpil.svg" alt="pil" class="tekstpil" />
@@ -80,6 +75,7 @@
 
 			<!-- --------- SLIDESHOW CONTAINER --------- -->
 			<div class="slideshow-container">
+				<p id="m-nudler">månedens nudler</p>
 				<!-- Venstre pil (forrige slide) -->
 				<button class="prev" onclick="changeSlide(-1)">&#10094;</button>
 
@@ -147,7 +143,7 @@
 				</div>
 			</div>
 
-			<section>
+			<section id="guide">
 				<p>chilistyrke: 0</p>
 				<div class="grid_1-1-1">
 					<div class="nudelguidepage">
@@ -202,12 +198,12 @@
 			<div class="footerstyle">
 				<img src="img/tomo2.svg" alt="" class="tomo-l" />
 				<ul>
-					<li class="footerstyleli"><a href="opskrifter.html">kontakt</a></li>
+					<li class="footerstyleli"><a class="footerstyle-a" href="opskrifter.html">kontakt</a></li>
 				</ul>
 
 				<div class="footerstylekontakt">
 					<ul>
-						<li class="footerstyleli"><a href="opskrifter.html">instagram</a></li>
+						<li class="footerstyleli"><a class="footerstyle-a" href="opskrifter.html">instagram</a></li>
 					</ul>
 				</div>
 			</div>
