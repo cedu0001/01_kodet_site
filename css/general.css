@@ -4,19 +4,6 @@
 	box-sizing: border-box;
 }
 
-html,
-body {
-	height: 100%;
-}
-html {
-	display: table;
-	margin: auto;
-}
-body {
-	display: table-cell;
-	vertical-align: middle;
-}
-
 @font-face {
 	font-family: inter;
 	src: url(/font/Inter_28pt-ExtraBold.ttf);

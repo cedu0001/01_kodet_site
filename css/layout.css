@@ -187,10 +187,66 @@
 		font-family: robotomono;
 		font-size: 16px;
 	}
+
+	.header_web {
+		display: none;
+	}
 }
 
 @media (min-width: 600px) {
+	main {
+		max-width: 1000px;
+	}
+
 	.insta-icon {
 		display: none;
+	}
+
+	html,
+	body {
+		height: 100%;
+	}
+	html {
+		display: table;
+		margin: auto;
+	}
+	body {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	h1 {
+		font-size: 64px;
+	}
+
+	h2 {
+		font-size: 48px;
+	}
+
+	h3 {
+		font-size: 36px;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	.off-screen-menu {
+		display: none;
+	}
+
+	.flex_row {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		list-style-type: none;
+		padding: 0;
+	}
+
+	.nav-web-global a {
+		color: #000000;
+		text-decoration: none;
+		font-family: robotomono;
+		font-size: 16px;
 	}
 }
