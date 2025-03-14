@@ -77,9 +77,6 @@
 		padding-left: 15px;
 	}
 
-	.ham-menu {
-	}
-
 	.ham-menu span {
 		height: 4px;
 		width: 80%;
@@ -132,7 +129,7 @@
 	/* Prikker under billedet på mobil */
 	.slideshow-indicators {
 		margin-top: 245px; /* Lidt tættere på billedet */
-		margin-left: -600px; /* Lidt tættere på billedet */
+		margin-left: -620px; /* Lidt tættere på billedet */
 	}
 
 	.grid_1-1-1 {

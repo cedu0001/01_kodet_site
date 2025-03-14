@@ -147,6 +147,7 @@ nav {
 	align-items: center; /* Justerer elementerne lodret */
 	gap: 20px; /* Afstand mellem billede og tekst */
 }
+
 .slide-content h3,
 .slide-content p {
 	color: white;
@@ -156,6 +157,11 @@ nav {
 .slide img {
 	width: 100%; /* Sørger for, at billedet ikke overstiger sin container */
 	max-width: 200px; /* Begrænser billedets maksimale bredde */
+}
+
+.slideshow-img {
+	max-height: 200px;
+	object-fit: contain;
 }
 
 /* --------- CTA KNAP --------- */
@@ -198,6 +204,7 @@ nav {
 	display: flex;
 	justify-content: center;
 	margin-top: 10px;
+	padding-bottom: 10px;
 }
 
 .dot {
