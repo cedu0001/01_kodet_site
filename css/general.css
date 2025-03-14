@@ -64,8 +64,13 @@ nav {
 .btn1 {
 	background-color: black;
 	font-family: robotomono;
-	color: white;
-	text-decoration: none;
+	display: inline-block; /* Gør knappen klikbar */
+	margin-top: 10px; /* Lidt afstand over knappen */
+	padding: 10px 20px; /* Gør knappen større */
+	color: rgb(255, 255, 255); /* Gør teksten sort for kontrast */
+	font-weight: bold; /* Gør teksten fed */
+	text-decoration: none; /* Fjerner understregning fra link */
+	font-family: robotomono;
 }
 
 .logo {
@@ -162,7 +167,7 @@ nav {
 	color: black; /* Gør teksten sort for kontrast */
 	font-weight: bold; /* Gør teksten fed */
 	text-decoration: none; /* Fjerner understregning fra link */
-	border-radius: 5px; /* Gør hjørnerne runde */
+	border-radius: 45px; /* Gør hjørnerne runde */
 	font-family: robotomono;
 }
 
@@ -239,7 +244,7 @@ nav {
 	grid-row: 1;
 }
 
-.btn2 {
+.btn-galleri {
 	grid-column: 3/4;
 	grid-row: 2;
 }
@@ -251,14 +256,70 @@ nav {
 .proevlykken {
 	display: flex;
 	justify-content: right;
+	color: black; /* Gør teksten sort for kontrast */
+	text-decoration: none; /* Fjerner understregning fra link */
+	font-family: robotomono;
+	border: 2px solid black;
+	width: 150px;
+	padding: 2px 20px;
+	margin-left: auto;
+	margin-bottom: 10px;
+	border-radius: 45px;
+}
+
+.btn-galleri {
+	margin-right: auto;
+	margin-bottom: 10px;
+	border-radius: 45px;
+	width: 180px;
+	font-family: robotomono;
+	border: 2px solid black;
+	color: black;
+	text-decoration: none;
 }
 
 /* søgesektion slut */
 
 /* dropdown start */
 .dropdown {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column; /* Stabler elementer lodret */
 	background-color: black;
+	max-width: auto;
+	margin-bottom: 10px;
 }
+
+.dropdown h3 {
+	color: #ffd000;
+	font-family: robotomono;
+	background-color: black;
+	border: 2px;
+	border-style: solid;
+	border-color: #ffd000;
+	max-width: auto;
+	margin-left: 3px;
+	margin-right: 3px;
+	border-radius: 3%;
+}
+
+.dropdownstyle img {
+	max-width: auto;
+	margin-left: 3px;
+	margin-right: 3px;
+	width: 20px; /* Justér størrelsen efter behov */
+	height: auto;
+}
+
+.dropdownstyle {
+	background-color: rgb(0, 0, 0);
+	max-height: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	justify-content: space-between; /* Skubber elementerne til hver sin ende */
+	align-items: center; /* Sørger for at de er på samme højde */
+}
+
 /* dropdown slut */
 
 /* nudelguide start */
@@ -275,6 +336,18 @@ nav {
 	background-color: black;
 	max-width: 100%;
 	height: auto;
+	display: flex;
+	flex-direction: column; /* Stabler elementer lodret */
+	align-items: center; /* Centrerer indholdet */
+	text-align: center;
+}
+
+.nudelguidetekst {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	font-family: robotomono;
+	margin-bottom: 10px;
+	font-size: 16px; /* Justér efter behov */
 }
 
 /* nudelguide slut */
@@ -282,7 +355,7 @@ nav {
 /* nyheder-html start */
 .nyhederstyle {
 	display: block;
-	background-color: rgb(0, 0, 0);
+	background-color: black;
 	max-width: 100%;
 	height: auto;
 	margin-top: 10px;
@@ -363,7 +436,7 @@ nav {
 	text-align: center;
 	background-color: rgba(255, 255, 255, 0.486);
 	max-width: 100%;
-	min-width: 300px;
+	min-width: max-content;
 	min-height: 150px;
 	padding: 1em;
 	font-size: 3vw;

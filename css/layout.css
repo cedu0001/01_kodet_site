@@ -122,7 +122,7 @@
 	/* Prikker under billedet på mobil */
 	.slideshow-indicators {
 		margin-top: 245px; /* Lidt tættere på billedet */
-		margin-left: -610px; /* Lidt tættere på billedet */
+		margin-left: -600px; /* Lidt tættere på billedet */
 	}
 
 	.grid_1-1-1 {
@@ -130,6 +130,22 @@
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 33.33% 33.33% 33.33%;
 	}
+
+	.nudelguidepage {
+		display: flex;
+		flex-direction: column; /* Stabler elementer lodret */
+		align-items: center; /* Centrerer indholdet */
+		text-align: center;
+	}
+
+	.nudelguidetekst {
+		color: rgb(255, 255, 255);
+		text-decoration: none;
+		font-family: robotomono;
+		margin-bottom: 10px;
+		font-size: 16px; /* Justér efter behov */
+	}
+
 	.grid_1-1-1-1 {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
