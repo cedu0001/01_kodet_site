@@ -57,7 +57,7 @@
 		align-items: center;
 		text-align: center;
 		font: 3rem;
-		transform: 0.3s ease;
+		transition: 0.3s ease;
 		z-index: 998;
 	}
 
@@ -160,6 +160,12 @@
 		font-family: robotomono;
 		margin-bottom: 10px;
 		font-size: 16px; /* Justér efter behov */
+	}
+
+	.dropdown {
+		max-width: max-content;
+		min-width: 420px;
+		margin-bottom: 10px;
 	}
 
 	.grid_1-1-1-1 {

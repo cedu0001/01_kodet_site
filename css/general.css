@@ -74,7 +74,7 @@ nav {
 }
 
 .tomotekst {
-	grid-template-columns: 5;
+	grid-column: 5;
 	grid-row: 2/3;
 }
 
@@ -287,7 +287,8 @@ nav {
 	justify-content: space-between;
 	flex-direction: column; /* Stabler elementer lodret */
 	background-color: black;
-	max-width: auto;
+	max-width: max-content;
+	min-width: 1000px;
 	margin-bottom: 10px;
 }
 
@@ -397,7 +398,7 @@ nav {
 	justify-content: start;
 }
 
-#tomo-nyheder {
+#tomo-nyheder-venstre {
 	grid-column: 1;
 	max-width: 75px;
 	max-height: 75px;
@@ -511,7 +512,7 @@ p {
 	background-color: rgb(255, 255, 255);
 	border-style: solid;
 	display: grid;
-	max-height: auto;
+	max-height: fit-content;
 	grid-template-columns: 1fr;
 	grid-template-rows: 2fr 2fr;
 	margin-bottom: 10px;
