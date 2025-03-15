@@ -464,10 +464,11 @@ nav {
 	grid-column: 1/3;
 	place-self: center;
 	text-align: center;
-	background-color: rgba(255, 255, 255, 0.486);
+	background-color: rgba(0, 0, 0, 0.5); /* Mørkere overlay */
+	color: white;
 	max-width: 100%;
-	min-width: max-content;
-	min-height: 150px;
+	min-width: 300px;
+	min-height: 190px;
 	padding: 1em;
 	font-size: 3vw;
 	z-index: 1;
@@ -479,8 +480,8 @@ nav {
 	grid-column: 1/3;
 	position: absolute;
 	width: 150px;
-	bottom: 57px; /* Flytter knappen ned over kanten af den hvide kasse */
-	left: 70%; /* Centrerer den vandret */
+	bottom: 30px; /* Flytter knappen ned over kanten af den hvide kasse */
+	left: 71%; /* Centrerer den vandret */
 	transform: translateX(-70%); /* Justerer for at holde den præcis i midten */
 	background-color: white;
 	border: 2px solid black;

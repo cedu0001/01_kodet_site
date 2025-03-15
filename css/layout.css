@@ -438,40 +438,38 @@
 		position: relative;
 		min-width: 900px;
 		width: 100%;
-		height: auto;
+		min-height: 100px;
 	}
 
 	#featuredopskrift-info {
 		display: flex;
 		flex-direction: column;
-		justify-content: center; /* Centrerer vertikalt */
-		align-items: center; /* Centrerer horisontalt */
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%); /* Centrerer præcist */
+		align-items: center;
+		grid-column: 2/3;
+		place-self: center;
 		text-align: center;
 		background-color: rgba(0, 0, 0, 0.5); /* Mørkere overlay */
 		color: white;
-		width: 80%;
-		max-width: fit-content;
-		padding: 20px;
-		border-radius: 10px;
+		max-width: 100%;
+		min-width: 300px;
+		min-height: 190px;
+		padding: 1em;
+		font-size: 3vw;
 		z-index: 1;
 	}
 
 	#btn-opskrifter {
-		display: inline-block;
-		margin-top: 15px; /* Sørg for, at knappen er under teksten */
-		padding: 10px 20px;
 		font-size: 16px;
+		font-family: robotomono;
+		margin-top: 10px; /* Sørg for, at knappen er under teksten */
+		padding: 20px 20px;
 		background-color: white;
 		color: black;
 		border: 2px solid black;
 		text-decoration: none;
-		font-weight: bold;
-		bottom: -39px;
-		left: 28%;
+		bottom: -65px;
+		left: 30%;
+		min-width: fit-content;
 		position: relative;
 	}
 }
