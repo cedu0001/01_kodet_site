@@ -6,17 +6,17 @@
 
 @font-face {
 	font-family: inter;
-	src: url(/font/Inter_28pt-ExtraBold.ttf);
+	src: url(../font/Inter_28pt-ExtraBold.ttf);
 }
 
 @font-face {
 	font-family: sourceserif;
-	src: url(/font/SourceSerif4-Italic.ttf);
+	src: url(../font/SourceSerif4-Italic.ttf);
 }
 
 @font-face {
 	font-family: robotomono;
-	src: url(/font/RobotoMono-Regular.ttf);
+	src: url(../font/RobotoMono-Regular.ttf);
 }
 
 body {
@@ -31,6 +31,7 @@ img {
 
 h1 {
 	font-family: inter;
+	font-weight: bolder;
 }
 
 h2 {
@@ -102,7 +103,6 @@ nav {
 /* --------- SLIDESHOW CONTAINER --------- */
 .slideshow-container {
 	position: relative; /* Gør det muligt at placere pile absolut i forhold til containeren */
-	max-width: 600px; /* Slideshowets maksimale bredde */
 	margin: auto; /* Centrerer slideshowet på siden */
 	overflow: hidden; /* Forhindrer indhold i at strække sig uden for containeren */
 	display: grid;
