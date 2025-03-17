@@ -120,16 +120,10 @@
 	}
 
 	.slideshow-container {
-		height: 500px;
+		min-height: 100px;
+		height: 550px;
 	}
 
-	#m-nudler {
-		font-size: 20px;
-		background-color: black;
-		width: 400px;
-		text-align: center;
-		border-bottom: 2px #000000;
-	}
 	.slide-content {
 		display: grid;
 		grid-template-columns: 1fr 1fr; /* Bevarer layoutet med billede + tekst ved siden af hinanden */
@@ -143,6 +137,8 @@
 	.cta {
 		display: inline-block; /* Gør knappen klikbar */
 		margin-bottom: 10px; /* Lidt afstand over knappen */
+		padding: 10px 20px; /* Sikrer plads til knappen */
+		margin-right: 20px;
 	}
 
 	/* Prikker under billedet på mobil */
@@ -198,12 +194,6 @@
 		height: fit-content;
 	}
 
-	.dropdown {
-		max-width: max-content;
-		min-width: 400px;
-		margin-bottom: 10px;
-	}
-
 	#tomotekst-opskrifter {
 		grid-column: 2/7;
 		grid-row: 2;
@@ -249,6 +239,19 @@
 	}
 	#m-nudler {
 		font-size: 20px;
+		background-color: black;
+		text-align: center;
+		width: 100%; /* Sørg for, at den ikke overstiger skærmbredden */
+		max-width: 400px; /* Eller en passende max-bredde */
+		margin: 0 auto; /* Centrerer indholdet */
+	}
+
+	.dropdown {
+		padding: 3px;
+		max-width: 100%; /* Sørger for, at den ikke er bredere end skærmen */
+		min-width: 200px; /* Minimum bredde så den stadig er læsbar */
+		margin: 0 auto; /* Centrerer den */
+		display: block;
 	}
 }
 
